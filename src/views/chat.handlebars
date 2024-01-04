@@ -1,0 +1,15 @@
+
+<div>
+    <h1> GameStore - Chat </h1>
+
+    <input type="text" name="message" id="message" placeholder="Message" style="width: 260px;">
+    <button onclick="sendMessage()"> Send </button>
+    <img id="img" src="" alt="" style="width: 25%; height: auto;" >
+    <p id="received_messages"></p>
+</div>
+
+{{!-- Socket.io Client --}}
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/static/js/client.js"></script>

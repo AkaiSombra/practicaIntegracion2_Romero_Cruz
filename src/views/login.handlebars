@@ -1,0 +1,48 @@
+<style>
+    .login-container {
+        max-width: 360px;
+        margin: auto;
+        margin-top: 64px;
+    }
+</style>
+
+
+<div class="login-container" style="background-color: #2f3035; padding: 30px;">
+    <h1 style="color: #fff; text-align: center; padding-bottom: 15px;"><b>Videogame Store</b></h1>
+    <h2 style="color: #fff;">User Login</h2>
+
+    <div id="error-message" style="color: red; margin-bottom: 10px;"></div>
+
+    <form class="form" style="margin-top: 32px;">
+        <div class="input-group" style="width: 300px; margin-bottom: 32px;">
+            <span class="input-group-text" id="group1"><i class="fa-solid fa-user"></i></span>
+            <input type="text" name="username" class="form-control" placeholder="Username" required="required">
+        </div>
+
+        <div class="input-group" style="width: 300px; margin-bottom: 32px;">
+            <span class="input-group-text" id="group2"><i class="fa-solid fa-lock"></i></span>
+            <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+        </div>
+
+        <div style="margin-bottom: 32px;">
+            <a href="/restorepassword">Restore Password</a>
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <button type="button" class="btn btn-success" onclick="toGithub()">Login with Github
+            <i class="fab fa-github" style="margin-left: 5px;"></i>
+            </button>
+        </div>
+
+        <div style="margin-bottom: 32px;">
+            <button type="button" class="btn btn-success" onclick="toGoogle()">Login with Google
+            <i class="fa-brands fa-google"></i>
+            </button>
+        </div>
+
+
+        <button type="submit" class="btn btn-success">Login</button>
+        <button type="button" class="btn btn-success" onclick="toRegister()" style="margin-left: 144px;">Register</button>
+    </form>
+</div>
+<script src="/static/js/login.js"></script>

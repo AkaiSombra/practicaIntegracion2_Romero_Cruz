@@ -1,0 +1,20 @@
+
+<div style="display: flex; align-items: center; justify-content: space-between; margin-left: 5px; margin-top: 5px;">
+    <div style="flex: 1;">
+        <h1 style="color: #FFF;">User profile</h1>
+        <h2 style="color: #FFF;">Username: {{user.username}}</h2>
+        <h2 style="color: #FFF;">FirstName: {{user.firstName}}</h2>
+        <h2 style="color: #FFF;">Lastname: {{user.lastName}}</h2>
+        <h3 style="color: #FFF;">Role: {{user.role}}</h3>
+        <form action="/api/sessions/logout" method="get">
+        <button type="submit" class="btn btn-success">Logout</button>
+    </div>
+    <div style="flex: 1;">
+        <img src="{{user.image}}" alt="" style="height: 250px;">
+    </div>
+
+</form>
+</div>
+
+<div class="product-container" id="productContainer"></div>
+<script src="/static/js/toCart.js"></script>

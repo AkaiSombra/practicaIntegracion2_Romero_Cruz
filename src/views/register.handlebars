@@ -1,0 +1,55 @@
+
+<style>
+    .login-container {
+        max-width: 360px;
+        margin: auto;
+        margin-top: 64px;
+    }
+</style>
+
+
+<div class="login-container" style="background-color: #2f3035; padding: 30px;">
+    <h1 style="color: #fff; text-align: center; padding-bottom: 15px;"><b>Videogame Store</b></h1>
+    <h2 style="color: #fff;">User register </h2>
+
+    <div id="error-message" style="color: red; margin-bottom: 10px;"></div>
+
+    <form style="margin-top: 32px;" class="form">
+        <div class="input-group" style="width: 300px; margin-bottom: 32px;">
+            <input type="text" name="firstName" class="form-control" placeholder="Firstname" required="required">
+        </div>
+
+        <div class="input-group" style="width: 300px; margin-bottom: 32px;">
+            <input type="text" name="lastName" class="form-control" placeholder="Lastname" required="required">
+        </div>
+
+        <div class="input-group" style="width: 300px; margin-bottom: 32px;">
+            <input type="email" name="email" class="form-control" placeholder="Email" required="required">
+        </div>
+
+        <div class="input-group" style="width: 300px; margin-bottom: 32px;">
+            <input type="text" name="username" class="form-control" placeholder="Username" required="required">
+        </div>
+
+        <div class="input-group" style="width: 300px; margin-bottom: 32px;">
+            <input type="password" name="password" class="form-control" placeholder="Password" required="required">
+        </div>
+
+        <div class="input-group" style="width: 300px; margin-bottom: 32px;">
+            <input type="number" name="age" class="form-control" placeholder="Age" required="required">
+        </div>
+
+        <div class="input-group" style="width: 300px; margin-bottom: 32px;">
+            <label for="gender" style="color: #000; background-color: #fff; text-align: center;"> Gender </label>
+            <select class="form-control" id="gender" name="gender" required="required">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-success submitButton">Register</button>
+        <button type="button" class="btn btn-success" onclick="toLogin()" style="margin-left: 144px;">Login</button>
+    </form>
+</div>
+
+<script src="/static/js/register.js"></script>
